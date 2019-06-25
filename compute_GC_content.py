@@ -77,8 +77,8 @@ def count_GC_content(dataset):
     for k,dna_string in dataset.items():
         for nc in dna_string:
             if nc == 'G' or nc == 'C':
-                dataset_count[k] += 1
-        dataset_count[k] *= (100/len(dna_string))
+                dataset_count[k] += 100
+        dataset_count[k] /= len(dna_string)
 
     print(dataset_count)
 
