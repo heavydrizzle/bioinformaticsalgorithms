@@ -37,7 +37,7 @@ Sample Output
 
 Reference:
     http://rosalind.info/problems/fib/
-""" 
+"""
 
 def rabbits(n,k):
     """R(n) = R(n-1) + R(n-2) * k
